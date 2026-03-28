@@ -76,6 +76,20 @@
   </style>
   <!-- Dancing Script for logo -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <!-- AOS – Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Service card hover lift */
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900">
 
@@ -97,10 +111,10 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
         <!-- Left text -->
         <div class="py-12 pr-0 md:pr-8 flex flex-col justify-center">
-          <h1 class="font-heading font-black text-3xl tracking-[0.18em] mb-2">A L V E S A N</h1>
-          <span class="red-divider"></span>
-          <h2 class="font-heading font-semibold text-base mb-4">Andamios &amp; Montajes</h2>
-          <div class="hero-text">
+          <h1 data-aos="fade-up" data-aos-delay="0" class="font-heading font-black text-3xl tracking-[0.18em] mb-2">A L V E S A N</h1>
+          <span data-aos="fade-up" data-aos-delay="100" class="red-divider"></span>
+          <h2 data-aos="fade-up" data-aos-delay="200" class="font-heading font-semibold text-base mb-4">Andamios &amp; Montajes</h2>
+          <div data-aos="fade-up" data-aos-delay="350" class="hero-text">
             <p>Somos una empresa peruana con más de 20 años en la industria, cuya actividad principal es la de brindar soluciones con un servicio integral y eficiente en el rubro de ingeniería de andamios.</p>
             <p>Buscamos satisfacer la necesidad de nuestros clientes quienes demandan equipos seguros, un trato serio e inmediato y los mejores precios del mercado.</p>
             <p>Sabemos la importancia de la seguridad, por eso "ALVESAN" ofrece el servicio de alquiler o venta de andamios convencionales y multidireccionales, cumpliendo con todas las normativas de seguridad, certificaciones europeas y certificaciones dispuestas por la Universidad Nacional de Ingeniería (UNI).</p>
@@ -115,10 +129,10 @@
   </section>
 
   <!-- ===== QUIÉNES SOMOS (dark) ===== -->
-  <section class="p-0">
+  <section class="p-0" data-aos="fade-up" data-aos-duration="900">
     <div class="flex flex-col md:flex-row">
       <!-- LEFT: dark block with text (50%) -->
-      <div class="bg-gray-900 w-full md:w-1/2 py-14 px-8 md:px-12 flex flex-col justify-center">
+      <div data-aos="fade-right" data-aos-duration="900" class="bg-gray-900 w-full md:w-1/2 py-14 px-8 md:px-12 flex flex-col justify-center">
         <h2 class="font-heading font-black text-3xl text-white mb-2">¿Quiénes somos?</h2>
         <span class="block w-full h-0.5 bg-white mb-8"></span>
 
@@ -147,7 +161,7 @@
         </div>
       </div>
       <!-- RIGHT: image (50%) -->
-      <div class="w-full md:w-1/2" style="min-height:380px;">
+      <div data-aos="fade-left" data-aos-duration="900" class="w-full md:w-1/2" style="min-height:380px;">
         <img src="2.jpg" alt="Equipo ALVESAN en andamio" class="w-full h-full object-cover" style="min-height:380px;" />
       </div>
     </div>
@@ -156,11 +170,11 @@
   <!-- ===== NUESTROS SERVICIOS ===== -->
   <section class="py-14 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="font-heading font-black text-3xl mb-1">Nuestros Servicios</h2>
-      <span class="red-divider"></span>
+      <h2 data-aos="fade-up" class="font-heading font-black text-3xl mb-1">Nuestros Servicios</h2>
+      <span data-aos="fade-up" data-aos-delay="100" class="red-divider"></span>
 
       <!-- Alquiler - Venta -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14 mt-8">
+      <div data-aos="fade-up" data-aos-delay="100" class="service-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14 mt-8">
         <div class="aspect-[4/3] w-full overflow-hidden">
           <img src="3.jpg" alt="Alquiler Venta" class="w-full h-full object-cover" />
         </div>
@@ -171,7 +185,7 @@
       </div>
 
       <!-- Montaje -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14">
+      <div data-aos="fade-up" data-aos-delay="300" class="service-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14">
         <div class="text-center px-4 order-2 md:order-1">
           <h3 class="font-heading font-black text-xl tracking-widest mb-4">MONTAJE</h3>
           <p class="text-sm text-gray-700 leading-relaxed">La seguridad y el bienestar de nuestros clientes son de suma importancia para nosotros. Es por eso que disponemos de un equipo certificado y con amplia experiencia, quienes se encargan de garantizar tu protección y cuidado.</p>
@@ -182,7 +196,7 @@
       </div>
 
       <!-- Capacitación -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-up" data-aos-delay="500" class="service-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div class="aspect-[4/3] w-full overflow-hidden">
           <img src="5.jpg" alt="Capacitación" class="w-full h-full object-cover" />
         </div>
@@ -202,7 +216,7 @@
       <p class="text-base text-gray-700 mb-2">O, aún mejor, ¡ven a visitarnos!</p>
       <p class="text-sm text-gray-500 mb-6">Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina.</p>
       <a href="https://wa.me/51996620633" target="_blank"
-         class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold text-sm px-6 py-3 rounded transition">
+         class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold text-sm px-6 py-3 rounded transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
         <i class="fab fa-whatsapp text-green-400 text-lg"></i>
         ¿Cómo podemos ayudarte?
       </a>
@@ -266,10 +280,158 @@
     </div>
   </footer>
 
-  <!-- ===== WHATSAPP FLOAT ===== -->
-  <a href="https://wa.me/51996620633" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- ===== FLOATING BUBBLES CONTAINER ===== -->
+  <div style="position:fixed;bottom:24px;right:24px;z-index:1000;display:flex;flex-direction:column-reverse;align-items:flex-end;gap:12px;">
+
+    <!-- WhatsApp bubble -->
+    <a href="https://wa.me/51996620633" target="_blank" class="whatsapp-float" style="position:static;" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Contact (email) bubble -->
+    <button
+      onclick="toggleContactPanel()"
+      aria-label="Formulario de contacto"
+      style="width:56px;height:56px;border-radius:50%;background:#cc0000;color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 16px rgba(0,0,0,0.25);transition:transform 0.2s,box-shadow 0.2s;"
+      onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <i class="fas fa-envelope"></i>
+    </button>
+
+    <!-- Contact form panel (hidden by default) -->
+    <div id="contactPanel"
+      class="hidden"
+      style="width:320px;background:white;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.18);overflow:hidden;font-family:'Open Sans',sans-serif;">
+
+      <!-- Panel header -->
+      <div style="background:#111;padding:20px 20px 16px;position:relative;">
+        <button onclick="closeContactPanel()"
+          style="position:absolute;top:12px;right:14px;background:none;border:none;color:#aaa;font-size:1.2rem;cursor:pointer;line-height:1;"
+          aria-label="Cerrar">&#10005;</button>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <img src="1774716487353_image.png" alt="Alvesan" style="height:36px;width:auto;object-fit:contain;" />
+        </div>
+        <p style="color:#ddd;font-size:0.78rem;line-height:1.5;margin:0;">
+          ¡Hola! Háznos saber cómo te podemos ayudar y lo haremos lo antes posible.
+        </p>
+      </div>
+
+      <!-- Form body -->
+      <div style="padding:20px;">
+        <form action="https://formspree.io/f/XXXXXXX" method="POST" id="contactForm" onsubmit="handleFormSubmit(event)">
+
+          <div style="margin-bottom:12px;">
+            <input
+              type="text" name="name" id="cf-name" placeholder="Nombre *" required
+              style="width:100%;border:1px solid #ddd;border-radius:8px;padding:10px 12px;font-size:0.82rem;outline:none;box-sizing:border-box;font-family:inherit;"
+              onfocus="this.style.borderColor='#cc0000'" onblur="this.style.borderColor='#ddd'" />
+            <span id="err-name" style="display:none;color:#cc0000;font-size:0.7rem;margin-top:3px;">Llena este campo obligatorio.</span>
+          </div>
+
+          <div style="margin-bottom:12px;">
+            <input
+              type="email" name="email" id="cf-email" placeholder="Correo electrónico *" required
+              style="width:100%;border:1px solid #ddd;border-radius:8px;padding:10px 12px;font-size:0.82rem;outline:none;box-sizing:border-box;font-family:inherit;"
+              onfocus="this.style.borderColor='#cc0000'" onblur="this.style.borderColor='#ddd'" />
+            <span id="err-email" style="display:none;color:#cc0000;font-size:0.7rem;margin-top:3px;">Llena este campo obligatorio.</span>
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <textarea
+              name="message" id="cf-message" placeholder="¿Cómo te podemos ayudar? *" required rows="4"
+              style="width:100%;border:1px solid #ddd;border-radius:8px;padding:10px 12px;font-size:0.82rem;outline:none;resize:vertical;box-sizing:border-box;font-family:inherit;"
+              onfocus="this.style.borderColor='#cc0000'" onblur="this.style.borderColor='#ddd'"></textarea>
+            <span id="err-message" style="display:none;color:#cc0000;font-size:0.7rem;margin-top:3px;">Llena este campo obligatorio.</span>
+          </div>
+
+          <button type="submit"
+            style="width:100%;background:#cc0000;color:white;border:none;border-radius:8px;padding:11px;font-size:0.85rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background 0.2s;"
+            onmouseover="this.style.background='#a80000'" onmouseout="this.style.background='#cc0000'">
+            Enviar mensaje
+          </button>
+
+          <!-- Success message -->
+          <div id="form-success" style="display:none;margin-top:12px;padding:10px;background:#f0fff4;border:1px solid #86efac;border-radius:8px;color:#166534;font-size:0.78rem;text-align:center;">
+            ✅ ¡Mensaje enviado! Te contactaremos pronto.
+          </div>
+
+          <p style="margin-top:12px;font-size:0.65rem;color:#999;line-height:1.4;text-align:center;">
+            Este sitio está protegido por reCAPTCHA y se aplican la
+            <a href="https://policies.google.com/privacy" target="_blank" style="color:#cc0000;">Política de Privacidad</a> y los
+            <a href="https://policies.google.com/terms" target="_blank" style="color:#cc0000;">Términos de Servicio</a> de Google.
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </div><!-- end floating container -->
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out-quad',
+      offset: 60,
+      disable: function() { return window.innerWidth < 480; }
+    });
+  </script>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    function toggleContactPanel() {
+      const panel = document.getElementById('contactPanel');
+      panel.classList.toggle('hidden');
+    }
+
+    function closeContactPanel() {
+      document.getElementById('contactPanel').classList.add('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name    = document.getElementById('cf-name');
+      const email   = document.getElementById('cf-email');
+      const message = document.getElementById('cf-message');
+      let valid = true;
+
+      // Validate each field
+      [
+        { field: name,    err: 'err-name'    },
+        { field: email,   err: 'err-email'   },
+        { field: message, err: 'err-message' }
+      ].forEach(({ field, err }) => {
+        const errEl = document.getElementById(err);
+        if (!field.value.trim()) {
+          errEl.style.display = 'block';
+          field.style.borderColor = '#cc0000';
+          valid = false;
+        } else {
+          errEl.style.display = 'none';
+          field.style.borderColor = '#ddd';
+        }
+      });
+
+      if (!valid) return;
+
+      // Submit via Formspree fetch
+      const form = document.getElementById('contactForm');
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(res => {
+        if (res.ok) {
+          document.getElementById('form-success').style.display = 'block';
+          form.reset();
+          setTimeout(() => {
+            document.getElementById('form-success').style.display = 'none';
+            closeContactPanel();
+          }, 3000);
+        }
+      }).catch(() => {});
+    }
+  </script>
 
 </body>
 </html>
