@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALVESAN – Andamios & Montajes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
+
+    /* Logo script font simulation */
+    .logo-script {
+      font-family: 'Dancing Script', cursive;
+      color: #cc0000;
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+
+    /* Whatsapp float button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* Red underline decorative */
+    .red-divider {
+      width: 100%;
+      height: 2px;
+      background: #cc0000;
+      margin: 8px 0 16px 0;
+      display: block;
+    }
+
+    /* Hero text block */
+    .hero-text p { margin-bottom: 8px; font-size: 0.88rem; color: #222; line-height: 1.6; }
+
+    /* Services image */
+    .service-img { width: 100%; height: 260px; object-fit: cover; border-radius: 4px; }
+
+    /* Map iframe */
+    .map-iframe { width: 100%; height: 560px; border: 0; }
+
+    /* Schedule table */
+    .schedule-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 0.9rem; }
+    .schedule-row.bold-row { font-weight: 700; }
+
+    /* Section spacing */
+    section { padding: 56px 0; }
+
+    /* Dark section */
+    .dark-section { background: #111; color: #fff; }
+    .dark-section .red-divider { background: #fff; }
+
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  </style>
+  <!-- Dancing Script for logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-center">
+      <!-- Logo real -->
+      <img
+        src="1774716487353_image.png"
+        alt="ALVESAN Andamios & Montajes"
+        class="h-16 md:h-20 w-auto object-contain"
+      />
+    </div>
+  </header>
+
+  <!-- ===== HERO / ABOUT SECTION ===== -->
+  <section class="py-0">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+        <!-- Left text -->
+        <div class="py-12 pr-0 md:pr-8 flex flex-col justify-center">
+          <h1 class="font-heading font-black text-3xl tracking-[0.18em] mb-2">A L V E S A N</h1>
+          <span class="red-divider"></span>
+          <h2 class="font-heading font-semibold text-base mb-4">Andamios &amp; Montajes</h2>
+          <div class="hero-text">
+            <p>Somos una empresa peruana con más de 20 años en la industria, cuya actividad principal es la de brindar soluciones con un servicio integral y eficiente en el rubro de ingeniería de andamios.</p>
+            <p>Buscamos satisfacer la necesidad de nuestros clientes quienes demandan equipos seguros, un trato serio e inmediato y los mejores precios del mercado.</p>
+            <p>Sabemos la importancia de la seguridad, por eso "ALVESAN" ofrece el servicio de alquiler o venta de andamios convencionales y multidireccionales, cumpliendo con todas las normativas de seguridad, certificaciones europeas y certificaciones dispuestas por la Universidad Nacional de Ingeniería (UNI).</p>
+          </div>
+        </div>
+        <!-- Right image -->
+        <div class="min-h-[400px]">
+          <img src="1.jpg" alt="Andamio montaje" class="w-full h-full object-cover" style="min-height:400px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS (dark) ===== -->
+  <section class="p-0">
+    <div class="flex flex-col md:flex-row">
+      <!-- LEFT: dark block with text (50%) -->
+      <div class="bg-gray-900 w-full md:w-1/2 py-14 px-8 md:px-12 flex flex-col justify-center">
+        <h2 class="font-heading font-black text-3xl text-white mb-2">¿Quiénes somos?</h2>
+        <span class="block w-full h-0.5 bg-white mb-8"></span>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <!-- Misión -->
+          <div class="text-center">
+            <h3 class="font-heading font-black text-sm tracking-widest text-white mb-2">MISIÓN</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">Generar confianza al proporcionar soluciones que superen las expectativas, ofreciendo constantes mejoras y añadiendo un valor excepcional a nuestros servicios.</p>
+          </div>
+          <!-- Visión -->
+          <div class="text-center">
+            <h3 class="font-heading font-black text-sm tracking-widest text-white mb-2">VISIÓN</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">Deseamos ser reconocidos como una empresa líder en el Perú, especializada en brindar servicios de alquiler y montaje de andamios multidireccionales de alta calidad.</p>
+          </div>
+          <!-- Valores -->
+          <div class="text-center">
+            <h3 class="font-heading font-black text-sm tracking-widest text-white mb-3">VALORES</h3>
+            <ul class="space-y-1.5 text-xs text-gray-300">
+              <li class="flex items-center gap-2 justify-center"><i class="fas fa-check-circle text-red-500"></i><span>Compromiso</span></li>
+              <li class="flex items-center gap-2 justify-center"><i class="fas fa-check-circle text-red-500"></i><span>Seguridad</span></li>
+              <li class="flex items-center gap-2 justify-center"><i class="fas fa-check-circle text-red-500"></i><span>Calidad</span></li>
+              <li class="flex items-center gap-2 justify-center"><i class="fas fa-check-circle text-red-500"></i><span>Responsabilidad</span></li>
+              <li class="flex items-center gap-2 justify-center"><i class="fas fa-check-circle text-red-500"></i><span>Adaptabilidad</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT: image (50%) -->
+      <div class="w-full md:w-1/2" style="min-height:380px;">
+        <img src="2.jpg" alt="Equipo ALVESAN en andamio" class="w-full h-full object-cover" style="min-height:380px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUESTROS SERVICIOS ===== -->
+  <section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-heading font-black text-3xl mb-1">Nuestros Servicios</h2>
+      <span class="red-divider"></span>
+
+      <!-- Alquiler - Venta -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14 mt-8">
+        <div class="aspect-[4/3] w-full overflow-hidden">
+          <img src="3.jpg" alt="Alquiler Venta" class="w-full h-full object-cover" />
+        </div>
+        <div class="text-center px-4">
+          <h3 class="font-heading font-black text-xl tracking-widest mb-4">ALQUILER – VENTA</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">Ofrecemos una amplia gama de andamios para satisfacer tus necesidades específicas. Disponemos de andamios convencionales tipo Acrow, así como de andamios multidireccionales con los sistemas Doka y Layher. Estos sistemas reconocidos en la industria ofrecen versatilidad, seguridad y eficiencia en el montaje, brindando soluciones adaptadas a diversos proyectos y requerimientos.</p>
+        </div>
+      </div>
+
+      <!-- Montaje -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-14">
+        <div class="text-center px-4 order-2 md:order-1">
+          <h3 class="font-heading font-black text-xl tracking-widest mb-4">MONTAJE</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">La seguridad y el bienestar de nuestros clientes son de suma importancia para nosotros. Es por eso que disponemos de un equipo certificado y con amplia experiencia, quienes se encargan de garantizar tu protección y cuidado.</p>
+        </div>
+        <div class="aspect-[4/3] w-full overflow-hidden order-1 md:order-2">
+          <img src="4.jpg" alt="Montaje" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Capacitación -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="aspect-[4/3] w-full overflow-hidden">
+          <img src="5.jpg" alt="Capacitación" class="w-full h-full object-cover" />
+        </div>
+        <div class="text-center px-4">
+          <h3 class="font-heading font-black text-xl tracking-widest mb-4">CAPACITACIÓN</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">Impartimos cursos integrales que combinan teoría y práctica, diseñados específicamente para operarios y supervisores interesados en aprender sobre el montaje de andamios. Estas sesiones educativas proporcionan los conocimientos necesarios y las habilidades prácticas para realizar montajes seguros y eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COTIZA / CTA ===== -->
+  <section class="py-12 bg-white border-t border-gray-200">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-heading font-black text-3xl mb-2">Cotiza con nosotros las 24 horas.</h2>
+      <span class="block w-full h-px bg-gray-300 mb-6"></span>
+      <p class="text-base text-gray-700 mb-2">O, aún mejor, ¡ven a visitarnos!</p>
+      <p class="text-sm text-gray-500 mb-6">Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina.</p>
+      <a href="https://wa.me/51996620633" target="_blank"
+         class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold text-sm px-6 py-3 rounded transition">
+        <i class="fab fa-whatsapp text-green-400 text-lg"></i>
+        ¿Cómo podemos ayudarte?
+      </a>
+
+      <div class="mt-10">
+        <p class="font-heading font-bold tracking-widest text-sm text-gray-800">A L V E S A N : Andamios &amp; Montajes</p>
+        <p class="text-sm text-gray-500 mt-1">Av. Central 1413, Villa EL Salvador, Perú</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORARIO + MAPA ===== -->
+  <section class="py-12 bg-white border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Horario -->
+      <div class="text-center mb-8">
+        <h3 class="font-heading font-bold text-base mb-4">Horario de atención</h3>
+        <div class="inline-block text-left text-sm text-gray-700 space-y-1">
+          <div class="schedule-row"><span class="w-10 text-gray-500">lun</span><span>07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row"><span class="w-10 text-gray-500">mar</span><span>07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row"><span class="w-10 text-gray-500">mié</span><span>07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row"><span class="w-10 text-gray-500">jue</span><span>07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row"><span class="w-10 text-gray-500">vie</span><span>07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row bold-row"><span class="w-10 font-bold">sáb</span><span class="font-bold">07:00 a. m. – 06:30 p. m.</span></div>
+          <div class="schedule-row"><span class="w-10 text-gray-500">dom</span><span>Cerrado</span></div>
+        </div>
+      </div>
+
+      <!-- Mapa interactivo -->
+      <div class="w-full rounded overflow-hidden shadow">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500!2d-76.9393855!3d-12.2033136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b942c3e5c203%3A0xd46ccd3d34bea2ae!2sALVESAN%20ANDAMIOS!5e4!3m2!1ses!2spe!4v1711000000000!5m2!1ses!2spe"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa ALVESAN Andamios">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-white border-t border-gray-200 py-8 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Facebook icon -->
+      <a href="https://www.facebook.com/ALVESAN.andamios/#" target="_blank"
+         class="inline-flex items-center justify-center text-blue-600 hover:text-blue-800 text-3xl mb-4 transition">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <p class="text-sm text-gray-700 mb-1">Av. Central 1413, Villa EL Salvador, Perú</p>
+      <p class="text-sm mb-4">
+        Cel: <a href="tel:+51996620633" class="text-red-600 font-semibold hover:underline">996620633</a>
+      </p>
+
+      <div class="border-t border-gray-200 pt-4 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-500">
+        <span>Copyright © 2023 ALVESAN – Todos los derechos reservados.</span>
+        <span>RUC: 10105957322</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/51996620633" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
